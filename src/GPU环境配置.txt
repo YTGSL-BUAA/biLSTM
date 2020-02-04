@@ -1,0 +1,16 @@
+对于theano,从CPU转移到GPU不用修改网络源码。
+theano的GPU支持停留在了对应某个古老的cuda版本，新的支持文件源码已经发布但没有release,我已经自行编译好了，位于GPUsupport下的gpuarray.dll，用其直接覆盖Anaconda3\library\bin下的同名文件即可
+
+将 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\目录下的 nvrtc64_102_0.dll  文件 copy 到Anaconda3/Library/bin 目录下，并更名为 nvrtc64_102.dll
+
+将 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\目录下的 cublas64_10.dll  文件 copy 到Anaconda3/Library/bin 目录下，并更名为 cublas64_102.dll
+
+在C:\users\用户名 下粘贴GPUsupport文件夹下的.theanorc.txt，并修改你的cuda目录和dnn目录(dnn是cudnn的解压目录)
+cnmem是cudnn的显存配置参数，是否修改不影响运行，只影响性能，具体可以百度
+
+使用testGPU.py可以测试GPU环境是否成功
+
+
+
+
+
