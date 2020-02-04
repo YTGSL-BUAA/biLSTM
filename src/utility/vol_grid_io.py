@@ -51,7 +51,7 @@ def vols_serialization_bbx(dict_s, sample_idx):
     file_sfix = '-label.nii'
     aux_path = os.path.join(dict_s['img_b_path'], (str(sample_idx) + file_sfix))
     aux_mat, orig_dim, bbx_loc = serialize_single_vol_bbx(img_path=aux_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
-                                                          bbx_ext=10, norm_fact=3.0)
+                                                          bbx_ext=10, norm_fact=1.0)
     # print np.unique(aux_mat)
     # print aux_mat.shape
 
@@ -100,10 +100,10 @@ def vols_serialization_subgrid(dict_s, sample_idx):
     # load auxiliary maps
     aux_c0_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(0) + ".mat"))
     aux_c0_mat = serialize_single_vol(img_path=aux_c0_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
-                                      bbx_loc=sub_grid_loc, norm_fact=1)
+                                      bbx_loc=sub_grid_loc, norm_fact=1.0)
     aux_c1_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(1) + ".mat"))
     aux_c1_mat = serialize_single_vol(img_path=aux_c1_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
-                                      bbx_loc=sub_grid_loc, norm_fact=1)
+                                      bbx_loc=sub_grid_loc, norm_fact=1.0)
     #aux_c2_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(2) + ".mat"))
     #aux_c2_mat = serialize_single_vol(img_path=aux_c2_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
                                        #bbx_loc=sub_grid_loc, norm_fact=255.0)

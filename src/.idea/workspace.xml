@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1107b81-72a6-4141-9c0c-1be556668fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_cuda.h.c" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_cuda.h.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_opencl.h.c" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_opencl.h.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds_rnn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ds_rnn_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/error-plot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utility/vol_grid_io.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility/vol_grid_io.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,12 +24,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XFG8xTGBlGc1z1HOxJi9Q5jHOX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ds_rnn_test">
+  <component name="RunManager" selected="Python.ds_rnn_train">
     <configuration name="ds_rnn_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ds_rnn_test" />
         <item itemvalue="Python.ds_rnn_train" />
+        <item itemvalue="Python.ds_rnn_test" />
         <item itemvalue="Python.testGPU" />
         <item itemvalue="Python.vol_grid_io" />
         <item itemvalue="Python.subtensor" />
