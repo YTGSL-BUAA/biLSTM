@@ -1,4 +1,9 @@
+在无数次调试+踩坑踩一天之后的血的经验：
+
+
 对于theano,从CPU转移到GPU不用修改网络源码。
+
+
 theano的GPU支持停留在了对应某个古老的cuda版本，新的支持文件源码已经发布但没有release,我已经自行编译好了，位于GPUsupport下的gpuarray.dll，用其直接覆盖Anaconda3\library\bin下的同名文件即可
 
 将 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\目录下的 nvrtc64_102_0.dll  文件 copy 到Anaconda3/Library/bin 目录下，并更名为 nvrtc64_102.dll
