@@ -14,6 +14,8 @@ from model_base.lstm_xy import LSTM, BiLSTM, VanillaStack_BiLSTM
 
 from utility.optimizers import get_optimizer
 from utility.vol_grid_io import vols_serialization, vols_serialization_bbx, vols_serialization_subgrid
+import os
+import random
 dtype = theano.config.floatX
 
 ds_N = 8
@@ -276,8 +278,19 @@ class recur_net_c(object):
         min_train_err = np.inf
         learning_rate = dict_s['learning_rate']
 
-        seq_n = dict_s['img_n']
-        d_range = np.arange(seq_n)
+        ##获取要训练的数据的前缀！！######
+        data_ini=dict_s['data_ini']
+
+        ini_name = 'data.ini'
+
+        list = []
+        ini_file = open(os.path.join(data_ini, ini_name), "r")
+        for lines in ini_file.readlines():
+            list.append(lines.replace("\n", ""))
+        ini_file.close()
+
+        seq_n = len(list)
+        d_range = np.arange(len(list))
         ''' training begin '''
         for ep in range(self.train_epochs):
             # decrease learning rate with epoch
@@ -293,7 +306,7 @@ class recur_net_c(object):
             for b in range(n_batch):
                 print ('batch No. %d...' % b)
                 # p_idx = d_range[b * self.minibatch:(b + 1) * self.minibatch]
-                p_idx = d_range[b]
+                p_idx = list[d_range[b]]
                 # load data on-the-fly
                 # x, y = vols_serialization(dict_s, p_idx)
                 x, y = vols_serialization_subgrid(dict_s, p_idx)

@@ -100,10 +100,10 @@ def vols_serialization_subgrid(dict_s, sample_idx):
     # load auxiliary maps
     aux_c0_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(0) + ".mat"))
     aux_c0_mat = serialize_single_vol(img_path=aux_c0_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
-                                      bbx_loc=sub_grid_loc, norm_fact=1.0)
+                                      bbx_loc=sub_grid_loc, norm_fact=10.0)
     aux_c1_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(1) + ".mat"))
     aux_c1_mat = serialize_single_vol(img_path=aux_c1_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
-                                      bbx_loc=sub_grid_loc, norm_fact=1.0)
+                                      bbx_loc=sub_grid_loc, norm_fact=10.0)
     #aux_c2_path = os.path.join(dict_s['img_bm_path'], (str(sample_idx) + "_aux_" + str(2) + ".mat"))
     #aux_c2_mat = serialize_single_vol(img_path=aux_c2_path, cube_D=dict_s['cube_D'], ita=dict_s['ita'],
                                        #bbx_loc=sub_grid_loc, norm_fact=255.0)
@@ -123,6 +123,10 @@ def vols_serialization_subgrid(dict_s, sample_idx):
 
     # concatenate us and auxiliary serializations
     # feat_mat = np.concatenate((us_mat, aux_mat, aux_c0_mat, aux_c1_mat, aux_c2_mat, aux_c3_mat), axis=1)
+    print('now concatenating '+sample_idx+' the shapes of three are:')
+    print(us_mat.shape)
+    print(aux_c0_mat.shape)
+    print(aux_c1_mat.shape)
     feat_mat = np.concatenate((us_mat, aux_c0_mat, aux_c1_mat), axis=1)
     # feat_mat = aux_mat
     # print feat_mat.shape

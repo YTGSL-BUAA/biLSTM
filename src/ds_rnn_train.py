@@ -1,5 +1,6 @@
 from utility.ini_file_io import load_train_ini
 from recur_net import recur_net_c
+import os
 
 if __name__ == '__main__':
 

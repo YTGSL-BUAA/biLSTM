@@ -41,6 +41,7 @@ def load_train_ini(ini_file):
                           n_epochs      = cf.getint(s[d], "n_epochs"),
                           vld_intval    = cf.getint(s[d], "vld_intval"),
                           optimizer     = cf.get(s[d], "optimizer"),
+                          data_ini      = cf.get(s[d],"data_ini"),
                           earlyErr_T    = cf.getfloat(s[d], "earlyErr_T"))
         # add to list
         param_Levels.append(level_dict)
