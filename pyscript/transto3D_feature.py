@@ -52,8 +52,8 @@ for eachpreflix in namelist:
     nump1=np.array(arraylist1)
     print(nump0.shape)
     print(' from '+eachpreflix+'\n')
-    savemat(os.path.join(fileto,eachpreflix+'_0'+'.mat'),{'data':nump0})
-    savemat(os.path.join(fileto,eachpreflix+'_1'+'.mat'),{'data':nump1})
+    savemat(os.path.join(fileto,eachpreflix+'_aux'+'_0'+'.mat'),{'data':nump0})
+    savemat(os.path.join(fileto,eachpreflix+'_aux'+'_1'+'.mat'),{'data':nump1})
 
 
 

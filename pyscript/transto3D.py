@@ -1,18 +1,20 @@
-#使用这个py将非feature外的文件转换为3D
+#使用这个py将原图文件转换为3D，其中filepath路径下的图片需要已经经过normal_pic.py进行正则化
 
 from scipy.io import loadmat
 from scipy.io import savemat
 import os
 import numpy as np
 
-#filepath=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192ImgAug\normalized'
-
-filepath=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192LabelAug'
+filepath=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192ImgAug\normalized'
 
 
-#fileto=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192ImgAug\normalized3D'
 
-fileto=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192LabelAug\3D'
+fileto=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192ImgAug\normalized3D'
+
+
+file_ini_to=r'C:\BUAA\冯如杯代码\data\toGY20200221\somePerson\Resize192ImgAug\normalized3D'
+
+ini_name='data.ini'
 
 namelist=[]
 
@@ -27,6 +29,13 @@ for each_mat in path:
         preflix=''.join(reversed(temp.split('_',1)[1]))
         if(not preflix in namelist):
             namelist.append(preflix)
+
+
+
+if(os.path.exists(os.path.join(file_ini_to,ini_name))):
+        os.remove(os.path.join(file_ini_to,ini_name))
+
+
 
 for eachpreflix in namelist:
     numberlist=[]
@@ -50,6 +59,9 @@ for eachpreflix in namelist:
     print(nump.shape)
     print(' from '+eachpreflix+'\n')
     savemat(os.path.join(fileto,eachpreflix+'.mat'),{'data':nump})
+    with open(os.path.join(file_ini_to,ini_name),'a')as file_object:
+        file_object.write(eachpreflix+'\n')
+
 
 
 
