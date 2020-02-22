@@ -123,10 +123,6 @@ def vols_serialization_subgrid(dict_s, sample_idx):
 
     # concatenate us and auxiliary serializations
     # feat_mat = np.concatenate((us_mat, aux_mat, aux_c0_mat, aux_c1_mat, aux_c2_mat, aux_c3_mat), axis=1)
-    print('now concatenating '+sample_idx+' the shapes of three are:')
-    print(us_mat.shape)
-    print(aux_c0_mat.shape)
-    print(aux_c1_mat.shape)
     feat_mat = np.concatenate((us_mat, aux_c0_mat, aux_c1_mat), axis=1)
     # feat_mat = aux_mat
     # print feat_mat.shape

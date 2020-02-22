@@ -1,4 +1,4 @@
-#使用这个py将原图文件转换为3D，其中filepath路径下的图片需要已经经过normal_pic.py进行正则化
+#使用这个py将原图文件转换为3D，并生成ini文件，其中filepath路径下的图片需要已经经过normal_pic.py进行正则化
 
 from scipy.io import loadmat
 from scipy.io import savemat

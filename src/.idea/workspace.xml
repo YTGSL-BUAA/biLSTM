@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1107b81-72a6-4141-9c0c-1be556668fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_cuda.h.c" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_cuda.h.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_opencl.h.c" beforeDir="false" afterPath="$PROJECT_DIR$/GPUsupport/libgpuarray/src/cluda_opencl.h.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds_rnn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ds_rnn_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aux_label/0_aux.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aux_map/0_aux_0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aux_map/0_aux_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/segment_result/0_seg.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/us/0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/vol_grid_io.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility/vol_grid_io.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XFG8xTGBlGc1z1HOxJi9Q5jHOX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />

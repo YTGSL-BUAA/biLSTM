@@ -19,7 +19,18 @@ if __name__ == '__main__':
     test_auxLabel_folder = 'test/aux_label'
     test_auxMap_folder = 'test/aux_map'
     test_seg_folder = 'test/segment_result'
-    img_n = 1
+
+    test_data_info='test'    #data.ini文件的目录
+    ini_name='data.ini'
+
+    list=[]
+    ini_file = open(os.path.join(test_data_info, ini_name), "r")
+    for lines in ini_file.readlines():
+        list.append(lines.replace("\n", ""))
+    ini_file.close()
+
+
+    img_n =len(list)
     # parameter setting
     grid_D = 40
     grid_ita = 1
@@ -34,9 +45,11 @@ if __name__ == '__main__':
     RecurNet.build_symbol_model(mode='TEST')
 
     grid_dim = np.array([grid_D, grid_D, grid_D])
-    for k in range(img_n):
-    # for k in range(55, 56):
-        print ('testing No. %d volume...' % k)
+    for thisnumber in range(img_n):
+
+        k=list[thisnumber]
+        print ('testing No. %s volume..., it is number %d of %d' % (k,thisnumber+1,img_n))
+
 
         # load testing data
         # auxiliary prediction from 3D FCN
@@ -75,8 +88,8 @@ if __name__ == '__main__':
             us_mat = partition_vol2grid2seq(us_grid_vol, cube_D, cube_ita, norm_fact=255.0)
 
             # aux_mat    = partition_vol2grid2seq(aux_grid_vol, cube_D, cube_ita, norm_fact=3.0) #
-            aux_mat_c0 = partition_vol2grid2seq(aux_grid_vol_c0, cube_D, cube_ita, norm_fact=1.0)
-            aux_mat_c1 = partition_vol2grid2seq(aux_grid_vol_c1, cube_D, cube_ita, norm_fact=1.0)
+            aux_mat_c0 = partition_vol2grid2seq(aux_grid_vol_c0, cube_D, cube_ita, norm_fact=10.0)
+            aux_mat_c1 = partition_vol2grid2seq(aux_grid_vol_c1, cube_D, cube_ita, norm_fact=10.0)
             #aux_mat_c2 = partition_vol2grid2seq(aux_grid_vol_c2, cube_D, cube_ita, norm_fact=255.0)
             #aux_mat_c3 = partition_vol2grid2seq(aux_grid_vol_c3, cube_D, cube_ita, norm_fact=255.0)
             # concatenate us and auxiliary serializations
