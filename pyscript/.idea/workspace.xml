@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="319f4812-b162-4b15-8558-952454e9b5f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testini.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/utility/checkdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outcome/model/bilstm_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../outcome/model/bilstm_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outcome/model/ini/tr_param.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../outcome/model/ini/tr_param.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outcome/model/train_err.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../outcome/model/train_err.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/checkdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testini.py" beforeDir="false" afterPath="$PROJECT_DIR$/testini.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/GPUsupport/libgpuarray" beforeDir="false" afterPath="$PROJECT_DIR$/../src/GPUsupport/libgpuarray" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ds_rnn_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ds_rnn_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/error-plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/../src/error-plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/recur_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/recur_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/train/aux_label/0_aux.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/train/aux_map/0_aux_0.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/train/aux_map/0_aux_1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/train/targ/0_seg.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/train/us/0.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utility/ini_file_io.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utility/ini_file_io.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utility/vol_grid_io.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utility/vol_grid_io.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utility/checkdata.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
